@@ -3,7 +3,7 @@ name: Deploy MkDocs site to GitHub Pages
 on:
   push:
     branches:
-      - main  # Деплой будет происходить при пуше в main
+      - main  
 
 jobs:
   deploy:
