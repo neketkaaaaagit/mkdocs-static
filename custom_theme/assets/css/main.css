@@ -1,0 +1,112 @@
+/* Основные стили для body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Стили для шапки сайта */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+header nav a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* Стили для основного контента */
+main {
+    padding: 20px;
+    background-color: white;
+}
+
+main h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+}
+
+main section {
+    margin-bottom: 30px;
+}
+
+/* Добавляем контент в main */
+main section p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Стили для футера */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px; /* Изменили размер текста футера */
+}
+
+/* Стили для ссылок */
+a {
+    color: #1e90ff;
+    text-decoration: none;
+    margin-left: 15px; /* Добавлен отступ для левых ссылок */
+    margin-right: 15px; /* Добавлен отступ для правых ссылок */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ff6347; /* Изменили цвет ссылки при наведении */
+}
+
+a:active {
+    color: #ff4500; /* Цвет ссылки при активном состоянии */
+}
+
+/* Стили для изображений */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Мобильная адаптивность */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        padding: 15px;
+    }
+}

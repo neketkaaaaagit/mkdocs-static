@@ -1,0 +1,6 @@
+site_name: My Custom Site
+theme:
+  name: 'custom'  
+  custom_dir: 'assets/css'  
+extra_css:
+  - assets/css/main.css
