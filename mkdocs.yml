@@ -1,3 +1,8 @@
+site_name: My Custom MkDocs Site
 theme:
   name: null
   custom_dir: custom_theme
+
+nav:
+  - Home: index.md
+  - About: about.md
