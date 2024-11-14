@@ -1,6 +1,8 @@
-site_name: My Custom Site
+site_name: My Custom MkDocs Site
 theme:
-  name: 'custom'  
-  custom_dir: 'assets/css'  
-extra_css:
-  - assets/css/main.css
+  name: null
+  custom_dir: custom_theme
+
+nav:
+  - Home: index.md
+  - About: about.md
