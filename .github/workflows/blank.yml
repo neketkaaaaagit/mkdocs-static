@@ -3,7 +3,7 @@ name: Deploy MkDocs site to GitHub Pages
 on:
   push:
     branches:
-      - main  # Замените на вашу основную ветку, если она отличается
+      - main 
 
 jobs:
   deploy:
@@ -17,7 +17,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.12'  # Убедитесь, что у вас установлена актуальная версия Python
+          python-version: '3.12'  
 
       - name: Install dependencies
         run: |
@@ -30,5 +30,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # Используем токен GitHub
-          publish_dir: ./site  # Публикуем в папку, где генерируется сайт
+          github_token: ${{ secrets.GITHUB_TOKEN }}  
+          publish_dir: ./site  
